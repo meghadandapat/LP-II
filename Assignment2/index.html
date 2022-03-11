@@ -1,0 +1,62 @@
+<html>
+  <style>
+    .weatherText {
+      font-size: 18px;
+      font-family: "Calibri, sans-serif";
+      text-align: center;
+    }
+
+    #weatherSubmit {
+      color: rgb(0, 0, 0);
+      background-color: #d3b677;
+      padding: 5px 20px;
+      margin-top: 10px;
+      border-radius: 2px;
+      margin: 10px;
+      border-color: #d3b677;
+      font-weight: 600;
+    }
+
+    #weatherSubmit:hover {
+      cursor: pointer;
+      background-color: #ccad6a;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      width: 50%;
+      margin-top: 20vh;
+    }
+  </style>
+  <head>
+    <title class="alignct">Covid Tracker</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h1 style="text-align: center">Country-Wise Covid Tracker</h1>
+
+      <form class="weatherText" id="weatherForm" action="/" method="post">
+        <input
+          class="weatherText"
+          id="weatherInput"
+          type="text"
+          name="zipCode"
+          autocomplete="off"
+          placeholder=" Enter Name of Country"
+        />
+        <input
+          class="weatherText"
+          id="weatherSubmit"
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </div>
+  </body>
+</html>

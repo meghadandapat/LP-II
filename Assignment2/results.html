@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    #weatherResults {
+      font-family: "Calibri, sans-serif";
+      font-size: 24px;
+      padding: 30px;
+      display: inline-block;
+      text-align: center;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Covid Tracker</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 style="text-align: center; margin-top: 20px">
+      Country-Wise Covid Tracker
+    </h1>
+    <div id="weatherResults">
+      <table>
+        <tr>
+          <th>
+            <p>Country :</p>
+          </th>
+          <th>
+            <p>{{ country }}</p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <p>Capital City :</p>
+          </th>
+          <th>
+            <p>{{ capital }}</p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <p>Population:</p>
+          </th>
+          <th>
+            <p>{{ population }}</p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <p>Confirmed Cases:</p>
+          </th>
+          <th>
+            <p>{{ confirmed }}</p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <p>Deaths:</p>
+          </th>
+          <th>
+            <p>{{ deaths }}</p>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
