@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #dadada;
+    }
+    #weatherResults {
+      background-color: #abb0f3;
+      font-family: "Roboto", sans-serif;
+      font-size: 24px;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      margin: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.5);
+      width: 100%;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Anime Show Info!!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="weatherResults">
+      <img
+        src="{{"
+        image
+        }}
+        alt="movie poster"
+        width="250px"
+        height="250px"
+        style="object-fit: contain"
+      />
+      <table>
+        <tr>
+          <th>
+            <h3>Name:</h3>
+          </th>
+          <th>
+            <h3>{{ name }}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3>Rating:</h3>
+          </th>
+          <th>
+            <h3>{{ rating }}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3>summary:</h3>
+          </th>
+          <th>
+            <p>{{ summary }}</p>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

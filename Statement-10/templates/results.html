@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #dadada;
+    }
+    #weatherResults {
+      background-color: #abb0f3;
+      font-family: "Roboto", sans-serif;
+      font-size: 24px;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      margin: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.5);
+      width: 100%;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <title>University Info!!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="weatherResults">
+      <table>
+        <tr>
+          <th>
+            <h3>Name:</h3>
+          </th>
+          <th>
+            <h3>{{ name }}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3>Country:</h3>
+          </th>
+          <th>
+            <h3>{{ country}}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3>Domain:</h3>
+          </th>
+          <th>
+            <h3>{{ domain }}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3>Webpage:</h3>
+          </th>
+          <th>
+            <h3>{{ webpage }}</h3>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

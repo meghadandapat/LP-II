@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+    *,
+    *:after,
+    *:before {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #cef;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 98vh;
+    }
+
+    .widget {
+      background: linear-gradient(to bottom right, #3cc0fe 20%, #0066ff);
+      width: 500px;
+      height: 400px;
+      border-radius: 6px;
+      box-shadow: 0px 60px 80px -20px rgba(39, 165, 253, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .details {
+      font-family: Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      margin-left: 60px;
+    }
+
+    .temperature {
+      color: white;
+      font-weight: 300;
+      font-size: 7em;
+    }
+
+    .summary {
+      color: #d2e9fa;
+      font-size: 2em;
+      font-weight: 300;
+      width: 260px;
+      margin-top: -16px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid #9cd0ff;
+      margin-left: 8px;
+    }
+
+    .summaryText {
+      margin: 0;
+      margin-left: 56px;
+    }
+
+    .precipitation,
+    .wind {
+      color: #d2e9fa;
+      font-size: 1.6em;
+      font-weight: 300;
+      margin-left: 8px;
+    }
+
+    .precipitation {
+      margin-top: 16px;
+    }
+
+    .wind {
+      margin-top: 4px;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="widget">
+        <div class="details">
+          <div class="temperature">{{ Temp_feels_like }}°C</div>
+          <div class="summary">
+            <p class="summaryText">{{ Weather_Description }}</p>
+          </div>
+          <div class="precipitation">Humidity: {{ humididty }}</div>
+          <div class="wind">Wind: {{ wind_speed }}</div>
+          <div class="wind">Visibility: {{ visibility }}</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
