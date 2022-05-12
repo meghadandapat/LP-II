@@ -1,64 +1,74 @@
 <html>
-  <style>
-    .weatherText {
-      font-family: "Lato", "sans-serif";
-      font-size: 24px;
-      text-align: center;
-    }
+    <style>
+        .weatherText {
+            font-family: "Lato", "sans-serif";
+            font-size: 24px;
+            text-align: center;
+        }
 
-    #weatherForm {
-      padding: 20px;
-    }
+        #weatherForm {
+            padding: 20px;
+        }
 
-    #weatherSubmit {
-      color: white;
-      background-color: #083375;
-      padding: 5px 20px;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
+        #weatherSubmit {
+            color: white;
+            background-color: #083375;
+            padding: 5px 20px;
+            border-radius: 5px;
+            margin-top: 40px;
+        }
 
-    #weatherSubmit:hover {
-      cursor: pointer;
-    }
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .card {
-      width: 50%;
+        #weatherSubmit:hover {
+            cursor: pointer;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            border: 2px solid black;
+            background-color: #ADD8E6;
+            width: 50%;
+            height: 40%;
 
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
-  <head>
-    <title class="alignct">Weather App</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="card">
-      <h2 class="weatherText">Weather App</h2>
-
-      <form class="weatherText" id="weatherForm" action="/" method="post">
-        Enter City:
-        <input
-          class="weatherText"
-          id="weatherInput"
-          type="text"
-          name="zipCode"
-        /><br />
-        <input
-          class="weatherText"
-          id="weatherSubmit"
-          type="submit"
-          value="Submit"
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <head>
+        <title class="alignct">Post Office Finder</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            rel="stylesheet"
         />
-      </form>
-    </div>
-  </body>
+    </head>
+    <body>
+        <div class="card">
+            <h2 class="weatherText">Weather Forecast</h2>
+
+            <form class="weatherText" id="weatherForm" action="/" method="post">
+                Longitude:
+                <input
+                    class="weatherText"
+                    id="weatherInput"
+                    type="text"
+                    name="longitude"
+                /><br /></br>
+                Latitude:
+                <input
+                    class="weatherText"
+                    id="weatherInput2"
+                    type="text"
+                    name="latitude"
+                /><br />
+                <input
+                    class="weatherText"
+                    id="weatherSubmit"
+                    type="submit"
+                    value="Submit"
+                />
+            </form>
+        </div>
+    </body>
 </html>
