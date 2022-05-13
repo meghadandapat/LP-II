@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro to Node and MongoDB</title>
+    
+
+  </head>
+  <link rel="stylesheet" href="css/index.css" />
+  <body>
+<div class="container">
+    <form method="get" action="/">
+        <button type="submit" class="btn">Add New</button>
+    </form>
+</div>  
+<br>
+    <% if(student!=null) { %>
+    <table border="1px">
+       
+    <tr>
+        <th>Name</th>
+        <th>Roll no </th>
+        <th>WAD </th>
+        <th>DSBDA</th>
+        <th>CNS</th>
+        <th>CC</th>
+        <th>AI</th>
+    </tr>
+    <% student.forEach(function(item){ %>
+    <tr> 
+        <td><%= item.name%></td>
+        <td><%= item.rollno%></td>
+        <td><%= item.wad_marks%></td>
+        <td><%= item.dsbda_marks%></td>
+        <td><%= item.cns_marks%></td>
+        <td><%= item.cc_marks%></td>
+        <td><%= item.ai_marks%></td>
+        <td>
+            <form method="post" action="/deleteStudent/<%= item._id %>">
+                <button type="submit" class="btn">Delete</button>
+            </form>
+        </td>
+        
+    </td>
+    </tr>
+    <% }) %>
+    </table>
+    <% } %>
+  </body>
+  </html>
