@@ -1,0 +1,15 @@
+.success{
+    background-color: #67b26f;
+}
+
+.primary{
+    background: #2193b0;
+}
+
+.warning{
+    background: #eacda3;
+}
+
+.danger{
+    background: #ee9ca7;
+}

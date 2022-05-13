@@ -1,0 +1,22 @@
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.tagline{
+    margin-top: -10px;
+    margin-left: 25px;
+    font-weight: bold;
+    color: rgb(29, 5, 133);
+}
+p a{
+    text-decoration: none;
+    color: black;
+}
+p a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.login-container{
+
+    padding: -5px;
+}

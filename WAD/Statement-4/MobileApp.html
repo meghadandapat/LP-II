@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OCC App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+  </head>
+
+  <body>
+    <div data-role="page" id="home">
+      <div data-role="header" data-theme="b">
+        <h1>Udemy</h1>
+        <a
+          href="#videos"
+          class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-right ui-btn-icon-notext ui-corner-all"
+          >Next</a
+        >
+      </div>
+
+      <div data-role="content">
+        <div>
+          <h1 id="showcase_title">Learning that gets you</h1>
+          <p id="showcase_title">
+            Skills for your present (and your future). Get started with us.
+          </p>
+        </div>
+
+        <hr />
+        <div class="hero_section">
+          <div class="">
+            <img class="img" src="./pics/bg.jfif" />
+            <!-- id="homepic" class="animated" -->
+          </div>
+
+          <div class="ui-block-b animated slideInUp">
+            <h2>Categories:</h2>
+            <div class="categories">
+              <a
+                href=""
+                class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline"
+                data-theme="b"
+                >Development</a
+              >
+              <a
+                href=""
+                class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline"
+                data-theme="b"
+                >Business</a
+              >
+              <a
+                href=""
+                class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline"
+                data-theme="b"
+                >IT and Software</a
+              >
+              <a
+                href=""
+                class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline"
+                data-theme="b"
+                >Design</a
+              >
+              <a
+                href=""
+                class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline"
+                data-theme="b"
+                >Lifestyle</a
+              >
+              <a
+                href=""
+                class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline"
+                data-theme="b"
+                >Marketing</a
+              >
+              <a
+                href=""
+                class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline"
+                data-theme="b"
+                >Finance</a
+              >
+              <a
+                href=""
+                class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline"
+                data-theme="b"
+                >Health</a
+              >
+              <a
+                href=""
+                class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline"
+                data-theme="b"
+                >Music</a
+              >
+              <a
+                href=""
+                class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline"
+                data-theme="b"
+                >Photography</a
+              >
+              <a
+                href=""
+                class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline"
+                data-theme="b"
+                >Teaching</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- <br>
+
+			<div class="ui-block-b animated slideInUp">
+				<h4 style="text-align: center;"></h4>
+				<h5>Follow us on:</h5>
+				<a href="" class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline" data-theme="b">Facebook</a>
+				<a href="" class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline" data-theme="b">Twitter</a>
+			</div> -->
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <div data-role="navbar" data-iconpos="left">
+          <ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#videos" data-icon="grid">Videos</a></li>
+            <li><a href="#About" data-icon="info">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!---The video panel page -->
+    <div data-role="page" id="videos">
+      <div data-role="header" data-theme="b">
+        <h1>Udemy</h1>
+        <a
+          href="#About"
+          class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-right ui-btn-icon-notext ui-corner-all"
+          >next</a
+        >
+
+        <a
+          href="#home"
+          title="Back"
+          class="ui-btn ui-icon-back ui-btn-icon-left ui-btn-left ui-btn-icon-notext ui-corner-all"
+          >back</a
+        >
+      </div>
+
+      <div data-role="content">
+        <h1>Top categories</h1>
+        <ul
+          data-role="listview"
+          data-filter="true"
+          data-filter-placeholder="search it....Get it"
+          class="animated slideInLeft"
+          id="vid_list"
+        >
+          <li>
+            <a href=""
+              ><img src="pics/html2.png" />HTML
+              <p>The language used to create webpages</p>
+              <p>It's very easy to learn</p>
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              ><img src="pics/css.png" />CSS
+              <p>The language used to design webpages</p>
+              <p>It's very easy to learn</p>
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              ><img src="pics/javascript.png" />JAVASCRIPT
+              <p>The language used to make webpages dynamic.</p>
+              <p>It's very easy to learn</p>
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              ><img src="pics/jquery.png" />JQUERY
+              <p>
+                The js library used to make javascript More easily to work with
+                .
+              </p>
+              <p>Write less,Do more</p>
+              <p>It's very easy to learn</p>
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              ><img src="pics/jquery_UI.png" />JQUERY UI
+              <p>
+                The js library used to make User interface nice looking.Moreso
+                easily to work with .
+              </p>
+              <p>Write less,Do more</p>
+              <p>It's very easy to learn</p>
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              ><img src="pics/bootstrap.png" />BOOTSTRAP
+              <p>
+                The html,css and javasript Framework used to create responsive
+                websites.
+              </p>
+              <p>It's very easy to learn</p>
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              ><img src="pics/C prog.png" />C PROGRAMMING
+              <p>
+                The Language used to develop softwares and Operating systems .
+              </p>
+              <p>It's very easy to learn</p>
+            </a>
+          </li>
+
+          <li>
+            <a href=""
+              ><img src="pics/windows.png" />WINDOWS COMMANDLINE
+              <p>
+                It's a windows program that allows the user to naviagte the
+                computer without using a mouse .
+              </p>
+              <p>It's very easy to learn</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <div data-role="navbar" data-iconpos="left">
+          <ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#videos" data-icon="grid">Videos</a></li>
+            <li><a href="#About" data-icon="info">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Page -->
+    <div data-role="page" id="About">
+      <div data-role="header" data-theme="b">
+        <h1>Udemy</h1>
+        <a
+          href="#videos"
+          title="Back"
+          class="ui-btn ui-icon-back ui-btn-icon-left ui-btn-left ui-btn-icon-notext ui-corner-all"
+          >back</a
+        >
+      </div>
+
+      <div data-role="content" class="animated bounce">
+        <div class="main_content">
+          <h1>About Udemy</h1>
+          <p class="text_secondary">
+            We help organizations of all types and sizes prepare for the path
+            ahead — wherever it leads. Our curated collection of business and
+            technical courses help companies, governments, and nonprofits go
+            further by placing learning at the center of their strategies.
+          </p>
+        </div>
+        <div>
+          <img class="banner_img" src="./pics/Aboutus.png" />
+        </div>
+
+        <div data-role="collapsible">
+          <h1>Features</h1>
+          <ul data-role="listview" class="animated slideInRight">
+            <li>Course Completion certificate</li>
+            <li>Quizzes</li>
+            <li>24/7 Guidance support</li>
+            <li>Practice and revisea</li>
+            <li>Learn anytime, anywhere</li>
+          </ul>
+        </div>
+
+        <!-- <div data-role="collapsible">
+				<h1>About Channel</h1>
+				<ul data-role="listview">
+					<li>I teach how to Build Websites & Apps</li>
+					<li>I teach the in-demand web skills</li>
+					<li>Pricing:content is for free</li>
+					<li>Difficulty:It's very easy</li>
+				</ul>
+			</div> -->
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <div data-role="navbar" data-iconpos="left">
+          <ul>
+            <li><a href="#home" data-icon="home">Home</a></li>
+            <li><a href="#videos" data-icon="grid">Videos</a></li>
+            <li><a href="#About" data-icon="info">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </body>
+</html>

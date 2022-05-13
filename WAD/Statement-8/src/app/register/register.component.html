@@ -1,0 +1,73 @@
+<div class="row justify-content-center align-items-center login-container">
+  <div>
+    <div class="card bg-light" style="border-radius: 1rem">
+      <div class="card-body p-5 text-center">
+        <div style="display: inline-flex">
+          <h2 style="color: rgb(12, 104, 243); text-decoration: underline">
+            Register
+          </h2>
+        </div>
+
+        <form onsubmit="submitForm()">
+          <div class="form-outline form-white mb-4">
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="Full Name"
+              class="form-control form-control-lg"
+            />
+          </div>
+          <div class="form-outline form-white mb-4">
+            <input
+              type="text"
+              name="email"
+              placeholder="Email"
+              class="form-control form-control-lg"
+            />
+          </div>
+          <div class="form-outline form-white mb-4">
+            <input
+              type="text"
+              name="mblno"
+              placeholder="Mobile No."
+              class="form-control form-control-lg"
+            />
+          </div>
+          <div class="form-outline form-white mb-4">
+            <textarea
+              rows="2"
+              cols="30"
+              placeholder="Address"
+              class="form-control form-control-lg"
+            ></textarea>
+          </div>
+          <div class="form-outline form-white mb-4">
+            <input
+              type="text"
+              name="city"
+              placeholder="City"
+              class="form-control form-control-lg"
+            />
+          </div>
+          <div class="form-outline form-white mb-4">
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              class="form-control form-control-lg"
+            />
+          </div>
+
+          <p><a routerLink="login">Already Have Account?</a></p>
+          <div class="form-group">
+            <button class="btn btn-primary btn-lg px-5" type="submit">
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

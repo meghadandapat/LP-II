@@ -1,0 +1,8 @@
+.thumbnails{
+    display: flex;
+    padding: 5px;
+}
+a:hover{
+    background-color: blue;
+    color: white;
+}

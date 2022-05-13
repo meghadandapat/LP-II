@@ -1,0 +1,27 @@
+.tagline{
+    margin-top: 10px;
+    margin-left: 25px;
+    font-weight: bold;
+    color: rgb(29, 5, 133);
+    text-decoration: underline;
+}
+p a{
+    text-decoration: none;
+    color: black;
+}
+p a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+table tr td{
+    text-align: left;
+    padding: 10px;
+}
+
+.heading{
+    font-weight: bold;
+    font-size: large;
+}
+.content{
+    font-size: large;
+}
