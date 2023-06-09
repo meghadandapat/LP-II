@@ -23,3 +23,5 @@ This repository contains all the sample problem statements of Web Application De
 |[Statement 15](CC/Statement-14-15) |Find a procedure to transfer two text files from one virtual machine to another virtual machine. Also, list all the files present in both the VMs. |
 
 <hr>
+
+## [Sample problem statements for Web Application Development Lab](Sample_problem_statements_for_WADL.pdf)
