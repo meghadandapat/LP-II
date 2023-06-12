@@ -22,6 +22,8 @@ This repository contains all the sample problem statements of Web Application De
 |[Statement 14](CC/Statement-14-15) | Find a procedure to transfer two text files from one virtual machine to another virtual machine. Also, add some text in the file and display it before and after transfer on both the VMs.|
 |[Statement 15](CC/Statement-14-15) |Find a procedure to transfer two text files from one virtual machine to another virtual machine. Also, list all the files present in both the VMs. |
 
+### Note: Explaination of Cloud Computing assignments are available on [this channel](https://www.youtube.com/@CloudGenixx/videos) 
+
 <hr>
 
 ## [Sample problem statements for Web Application Development Lab](Sample_problem_statements_for_WADL.pdf)
